@@ -5,7 +5,7 @@
 **Date:** November 2, 2025  
 **Project:** Static Event Website for "SaaSified and Amplified: Ascending Software to the Sky"  
 **Organization:** Google Developer Groups on Campus – PLM (GDGoC PLM)  
-**Prepared by:** Development Team
+**Prepared by:** Daniel Hardy C. Camacho
 
 ---
 
