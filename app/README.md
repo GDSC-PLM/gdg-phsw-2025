@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SaaSified and Amplified 2025 - Event Website
 
-## Getting Started
+Official website for **"SaaSified and Amplified: Ascending Software to the Sky"** — a GDGoC PLM flagship event in collaboration with Philippine Startup Week 2025.
 
-First, run the development server:
+**Event Date:** November 13, 2025  
+**Built with:** Next.js 16 + TypeScript
+
+---
+
+## 🚀 Getting Started
+
+Install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the website.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📁 Project Structure
 
-## Learn More
+```
+app/
+├── src/app/              # Pages (App Router)
+│   ├── page.tsx         # Homepage
+│   ├── about/           # About page
+│   ├── speakers/        # Speakers page
+│   ├── schedule/        # Schedule page
+│   ├── faq/             # FAQ page
+│   └── partners/        # Partners page
+├── components/          # Reusable components (Header, Footer, Countdown)
+├── constants/           # Hardcoded event data
+├── types/              # TypeScript interfaces
+└── lib/                # Utility functions
+```
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Available Branches
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **`main`** — Styled version with vanilla CSS
+- **`feature/raw-unstyled`** — Raw HTML structure (no styling)
+- **`feature/vanilla-css-styling`** — Vanilla CSS implementation reference
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🛠️ Key Features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+✅ Static site generation (SSG)  
+✅ TypeScript with strict mode  
+✅ SEO optimized with metadata  
+✅ Responsive design  
+✅ Event countdown timer  
+✅ 6 pages: Home, About, Speakers, Schedule, FAQ, Partners
+
+---
+
+## 📝 Common Tasks
+
+**Update registration link:**
+```typescript
+// constants/eventData.ts
+export const REGISTRATION_LINK: ExternalLink = {
+  url: 'YOUR-GOOGLE-FORMS-URL',
+  label: 'Register Now',
+  openInNewTab: true,
+};
+```
+
+**Add a new FAQ:**
+```typescript
+// constants/faq.ts
+{
+  id: 'faq-11',
+  question: 'Your question?',
+  answer: 'Your answer.',
+}
+```
+
+---
+
+## 🚢 Deploy to Vercel
+
+1. Connect your GitHub repository to [Vercel](https://vercel.com)
+2. Set root directory to `/app`
+3. Deploy automatically on push to `main`
+
+---
+
+## 👥 Developed By
+
+**Daniel Hardy C. Camacho** — Web Development Lead, GDGoC PLM 2025  
+**Mariano Luiz B. King** — Web Development Lead, GDGoC PLM 2025
+
+---
+
+**Google Developer Groups on Campus – Pamantasan ng Lungsod ng Maynila**
