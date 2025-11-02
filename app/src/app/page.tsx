@@ -26,9 +26,6 @@ export default function Home() {
           <div className="detail-item">
             <strong>Format:</strong> {EVENT_DETAILS.format}
           </div>
-          <div className="detail-item">
-            <strong>Audience:</strong> {EVENT_DETAILS.audience}
-          </div>
         </div>
       </section>
 
