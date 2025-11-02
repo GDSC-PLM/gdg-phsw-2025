@@ -22,6 +22,9 @@ This is a static event website built with Next.js and TypeScript, showcasing our
 ## Development
 
 ```bash
+# Navigate to app directory
+cd app
+
 # Install dependencies
 npm install
 
@@ -30,15 +33,50 @@ npm run dev
 
 # Build for production
 npm run build
+
+# Export static site
+npm run build && npm run export
 ```
+
+Development server will be available at `http://localhost:3000`
 
 ## Project Structure
 
 ```
-├── documentation/       # Project documentation (SRS)
-├── docs/               # Raw event info (gitignored)
-└── [Next.js files]     # To be added
+├── documentation/          # Project documentation (SRS)
+├── docs/                  # Raw event info (gitignored)
+└── app/                   # Next.js application
+    ├── src/
+    │   └── app/          # App Router pages
+    │       ├── about/
+    │       ├── speakers/
+    │       ├── schedule/
+    │       ├── faq/
+    │       ├── partners/
+    │       ├── layout.tsx
+    │       └── page.tsx
+    ├── components/        # Reusable React components
+    │   ├── Header.tsx
+    │   ├── Footer.tsx
+    │   └── Countdown.tsx
+    ├── constants/         # Hardcoded data
+    │   ├── eventData.ts
+    │   ├── speakers.ts
+    │   ├── faq.ts
+    │   ├── schedule.ts
+    │   └── partners.ts
+    ├── types/            # TypeScript interfaces
+    └── lib/              # Utility functions
 ```
+
+## Pages
+
+- **Home** (`/`) - Event hero, countdown, quick links
+- **About** (`/about`) - Event details, objectives, partnerships
+- **Speakers** (`/speakers`) - Speaker bios and topics
+- **Schedule** (`/schedule`) - Event timeline
+- **FAQ** (`/faq`) - Frequently asked questions
+- **Partners** (`/partners`) - Sponsors and partners
 
 ## Developed By
 
