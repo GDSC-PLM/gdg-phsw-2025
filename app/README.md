@@ -7,7 +7,7 @@ Official website for **"SaaSified and Amplified: Ascending Software to the Sky"*
 
 ---
 
-## 🚀 Getting Started
+## Getting Started
 
 Install dependencies and run the development server:
 
@@ -20,7 +20,7 @@ Open [http://localhost:3000](http://localhost:3000) to view the website.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 app/
@@ -39,7 +39,7 @@ app/
 
 ---
 
-## 🎨 Available Branches
+## Available Branches
 
 - **`main`** — Styled version with vanilla CSS
 - **`feature/raw-unstyled`** — Raw HTML structure (no styling)
@@ -47,18 +47,18 @@ app/
 
 ---
 
-## 🛠️ Key Features
+## Key Features
 
-✅ Static site generation (SSG)  
-✅ TypeScript with strict mode  
-✅ SEO optimized with metadata  
-✅ Responsive design  
-✅ Event countdown timer  
-✅ 6 pages: Home, About, Speakers, Schedule, FAQ, Partners
+- Static site generation (SSG)
+- TypeScript with strict mode
+- SEO optimized with metadata
+- Responsive design
+- Event countdown timer
+- 6 pages: Home, About, Speakers, Schedule, FAQ, Partners
 
 ---
 
-## 📝 Common Tasks
+## Common Tasks
 
 **Update registration link:**
 ```typescript
@@ -82,7 +82,7 @@ export const REGISTRATION_LINK: ExternalLink = {
 
 ---
 
-## 🚢 Deploy to Vercel
+## Deploy to Vercel
 
 1. Connect your GitHub repository to [Vercel](https://vercel.com)
 2. Set root directory to `/app`
@@ -90,7 +90,7 @@ export const REGISTRATION_LINK: ExternalLink = {
 
 ---
 
-## 👥 Developed By
+## Developed By
 
 **Daniel Hardy C. Camacho** — Web Development Lead, GDGoC PLM 2025  
 **Mariano Luiz B. King** — Web Development Lead, GDGoC PLM 2025
