@@ -6,31 +6,37 @@ export default function Home() {
   return (
     <div className="home-page">
       <section className="hero">
-        <h1>{EVENT_DETAILS.name}</h1>
+        <h1>
+          <span className="gdg-red-text">SaaSified</span> and
+          <span className="gdg-blue-text"> Amplified</span>: Ascending{" "}
+          <span className="gdg-green-text">Software</span> to the Sky
+        </h1>
         <p className="tagline">{EVENT_DETAILS.tagline}</p>
         <p className="theme">{EVENT_DETAILS.theme}</p>
       </section>
 
       <section className="event-details">
-        <h2>Event Details</h2>
         <div className="details-grid">
           <div className="detail-item">
-            <strong>Date:</strong> {EVENT_DETAILS.date}
+            <strong className="gdg-yellow-text">Date:</strong>{" "}
+            <p>{EVENT_DETAILS.date}</p>
           </div>
           <div className="detail-item">
-            <strong>Time:</strong> {EVENT_DETAILS.time}
+            <strong className="gdg-red-text">Time:</strong> {EVENT_DETAILS.time}
           </div>
           <div className="detail-item">
-            <strong>Venue:</strong> {EVENT_DETAILS.venue}
+            <strong className="gdg-blue-text">Venue:</strong>{" "}
+            <p>{EVENT_DETAILS.venue}</p>
           </div>
           <div className="detail-item">
-            <strong>Format:</strong> {EVENT_DETAILS.format}
+            <strong className="gdg-green-text">Format:</strong>{" "}
+            <p>{EVENT_DETAILS.format}</p>
           </div>
         </div>
       </section>
 
       <section className="countdown-section">
-        <h2>Event Countdown</h2>
+        <h2 className="section-header-light">Event Countdown</h2>
         <Countdown targetDate={EVENT_DATE} />
       </section>
 
@@ -38,8 +44,10 @@ export default function Home() {
         {REGISTRATION_LINK.url ? (
           <a
             href={REGISTRATION_LINK.url}
-            target={REGISTRATION_LINK.openInNewTab ? '_blank' : '_self'}
-            rel={REGISTRATION_LINK.openInNewTab ? 'noopener noreferrer' : undefined}
+            target={REGISTRATION_LINK.openInNewTab ? "_blank" : "_self"}
+            rel={
+              REGISTRATION_LINK.openInNewTab ? "noopener noreferrer" : undefined
+            }
             className="cta-button"
           >
             {REGISTRATION_LINK.label}
@@ -50,30 +58,30 @@ export default function Home() {
       </section>
 
       <section className="about-preview">
-        <h2>About the Event</h2>
-        <p>{ABOUT_EVENT.description.split('\n\n')[0]}</p>
+        <h2 className='section-header'>About the Event</h2>
+        <p>{ABOUT_EVENT.description.split("\n\n")[0]}</p>
         <Link href="/about" className="read-more">
           Learn More →
         </Link>
       </section>
 
       <section className="quick-links">
-        <h2>Quick Links</h2>
+        <h2 className='section-header'>Quick Links</h2>
         <div className="links-grid">
           <Link href="/speakers" className="quick-link-card">
-            <h3>Speakers</h3>
+            <h3 className="gdg-yellow-text">Speakers</h3>
             <p>Meet our industry experts</p>
           </Link>
           <Link href="/schedule" className="quick-link-card">
-            <h3>Schedule</h3>
+            <h3 className="gdg-red-text">Schedule</h3>
             <p>View the event timeline</p>
           </Link>
           <Link href="/faq" className="quick-link-card">
-            <h3>FAQ</h3>
+            <h3 className="gdg-blue-text">FAQ</h3>
             <p>Get your questions answered</p>
           </Link>
           <Link href="/partners" className="quick-link-card">
-            <h3>Partners</h3>
+            <h3 className="gdg-green-text">Partners</h3>
             <p>See our sponsors</p>
           </Link>
         </div>
