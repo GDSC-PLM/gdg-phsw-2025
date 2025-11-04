@@ -1,8 +1,10 @@
+'use client'
 import Link from 'next/link';
 import { Countdown } from '@/components';
 import { EVENT_DETAILS, EVENT_DATE, REGISTRATION_LINK, ABOUT_EVENT } from '@/constants';
 
 export default function Home() {
+
   return (
     <div className="home-page">
       <section className="hero">
@@ -22,7 +24,8 @@ export default function Home() {
             <p>{EVENT_DETAILS.date}</p>
           </div>
           <div className="detail-item">
-            <strong className="gdg-red-text">Time:</strong> {EVENT_DETAILS.time}
+            <strong className="gdg-red-text">Time:</strong>{" "}
+            {EVENT_DETAILS.time}
           </div>
           <div className="detail-item">
             <strong className="gdg-blue-text">Venue:</strong>{" "}
@@ -46,7 +49,9 @@ export default function Home() {
             href={REGISTRATION_LINK.url}
             target={REGISTRATION_LINK.openInNewTab ? "_blank" : "_self"}
             rel={
-              REGISTRATION_LINK.openInNewTab ? "noopener noreferrer" : undefined
+              REGISTRATION_LINK.openInNewTab
+                ? "noopener noreferrer"
+                : undefined
             }
             className="cta-button"
           >
@@ -58,7 +63,7 @@ export default function Home() {
       </section>
 
       <section className="about-preview">
-        <h2 className='section-header'>About the Event</h2>
+        <h2 className="section-header">About the Event</h2>
         <p>{ABOUT_EVENT.description.split("\n\n")[0]}</p>
         <Link href="/about" className="read-more">
           Learn More →
@@ -66,7 +71,7 @@ export default function Home() {
       </section>
 
       <section className="quick-links">
-        <h2 className='section-header'>Quick Links</h2>
+        <h2 className="section-header">Quick Links</h2>
         <div className="links-grid">
           <Link href="/speakers" className="quick-link-card">
             <h3 className="gdg-yellow-text">Speakers</h3>
