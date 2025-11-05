@@ -8,7 +8,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     id: 'faq-1',
     question: 'How do I register?',
-    answer: 'Click the "Register Now" button on the homepage to register for the event. Registration is free but slots are limited, so register early to secure your spot.',
+    answer: 'Click the "Register Now" button.',
   },
   {
     id: 'faq-2',
@@ -28,7 +28,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     id: 'faq-5',
     question: 'What should I bring?',
-    answer: 'Please bring a valid student ID for check-in. You may also bring a notebook or device for taking notes during the sessions.',
+    answer: 'Please bring a valid ID for check-in. You may also bring a notebook or device for taking notes during the sessions.',
   },
   {
     id: 'faq-6',
