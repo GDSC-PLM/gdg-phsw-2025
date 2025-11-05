@@ -9,13 +9,13 @@ export const SCHEDULE: ScheduleItem[] = [
     id: 'schedule-1',
     time: '12:00 PM – 12:45 PM',
     title: 'Registration and Cloud Check-In',
-    description: 'Participants sign in and receive their event kits. Cloud Flight Boarding Screen slideshow introduces GDGoC PLM, event theme, and sponsors.',
+    description: 'Participants sign in and check in the venue.',
   },
   {
     id: 'schedule-2',
     time: '12:45 PM – 1:00 PM',
     title: 'Opening Countdown and Hype Video',
-    description: 'Animated cloud ascension video featuring past GDGoC PLM highlights and upcoming initiatives.',
+    description: 'Countdown to the event before the first keynote session.',
   },
   {
     id: 'schedule-3',
