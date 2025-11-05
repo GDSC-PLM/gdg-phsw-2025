@@ -18,7 +18,7 @@ export const EVENT_DETAILS: EventDetails = {
 export const EVENT_DATE = new Date('2025-11-13T12:00:00+08:00'); // Philippine Time
 
 export const REGISTRATION_LINK: ExternalLink = {
-  url: '', // To be updated with Google Forms link
+  url: 'https://bit.ly/phsw25-SaasifiedandAmplified',
   label: 'Register Now',
   openInNewTab: true,
 };
