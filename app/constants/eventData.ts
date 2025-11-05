@@ -10,7 +10,7 @@ export const EVENT_DETAILS: EventDetails = {
   tagline: 'In collaboration with Philippine Startup Week 2025',
   date: 'November 13, 2025',
   time: '12:00 PM – 4:00 PM',
-  venue: 'Bukod Tanging Bulwagan, Pamantasan ng Lungsod ng Maynila (PLM), Intramuros, Manila',
+  venue: 'DLSU Animo Labs TBI and Fab Lab, Taft Avenue, Manila 1004',
   format: 'Onsite Keynote Talk',
   audience: '100–150 PLM students',
 };
@@ -18,7 +18,7 @@ export const EVENT_DETAILS: EventDetails = {
 export const EVENT_DATE = new Date('2025-11-13T12:00:00+08:00'); // Philippine Time
 
 export const REGISTRATION_LINK: ExternalLink = {
-  url: '', // To be updated with Google Forms link
+  url: 'https://bit.ly/phsw25-SaasifiedandAmplified',
   label: 'Register Now',
   openInNewTab: true,
 };
