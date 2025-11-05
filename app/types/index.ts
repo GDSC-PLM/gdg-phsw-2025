@@ -24,7 +24,7 @@ export interface Partner {
   logoUrl?: string;
   description?: string;
   websiteUrl?: string;
-  tier?: 'title' | 'major' | 'supporting';
+  tier?: 'title' | 'platinum' | 'major' | 'minor' | 'silver' | 'media' | 'supporting';
 }
 
 export interface ScheduleItem {
