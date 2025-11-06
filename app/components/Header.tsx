@@ -1,5 +1,6 @@
 'use client';
 
+import { REGISTRATION_LINK } from '@/constants/eventData';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -42,7 +43,7 @@ export default function Header() {
         </ul>
         <div className="nav-cta">
           <a 
-            href="" 
+            href={REGISTRATION_LINK.url}
             target="_blank" 
             rel="noopener noreferrer"
             className="register-button"

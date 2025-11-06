@@ -7,7 +7,7 @@ export default function Home() {
 
   return (
     <div className="home-page">
-      <section className="hero">
+      <div className="hero">
         <h1>
           <span className="gdg-red-text">SaaSified</span> and
           <span className="gdg-blue-text"> Amplified</span>: Ascending{" "}
@@ -15,7 +15,7 @@ export default function Home() {
         </h1>
         <p className="tagline">{EVENT_DETAILS.tagline}</p>
         <p className="theme">{EVENT_DETAILS.theme}</p>
-      </section>
+      </div>
 
       <section className="event-details">
         <div className="details-grid">
@@ -39,7 +39,7 @@ export default function Home() {
       </section>
 
       <section className="countdown-section">
-        <h2 className="section-header-light">Event Countdown</h2>
+        <h1 className="section-header section-header-light">Event Countdown</h1>
         <Countdown targetDate={EVENT_DATE} />
       </section>
 
@@ -74,11 +74,11 @@ export default function Home() {
         <h2 className="section-header">Quick Links</h2>
         <div className="links-grid">
           <Link href="/speakers" className="quick-link-card">
-            <h3 className="gdg-yellow-text">Speakers</h3>
+            <h3 className="gdg-yellow-text">SPEAKERS</h3>
             <p>Meet our industry experts</p>
           </Link>
           <Link href="/schedule" className="quick-link-card">
-            <h3 className="gdg-red-text">Schedule</h3>
+            <h3 className="gdg-red-text">SCHEDULE</h3>
             <p>View the event timeline</p>
           </Link>
           <Link href="/faq" className="quick-link-card">
@@ -86,7 +86,7 @@ export default function Home() {
             <p>Get your questions answered</p>
           </Link>
           <Link href="/partners" className="quick-link-card">
-            <h3 className="gdg-green-text">Partners</h3>
+            <h3 className="gdg-green-text">PARTNERS</h3>
             <p>See our sponsors</p>
           </Link>
         </div>

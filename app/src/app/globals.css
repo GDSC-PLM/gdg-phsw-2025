@@ -7,6 +7,13 @@
   --color-primary: #33503c;
   --card-color: #fffdea;
   
+  --card-gradient: linear-gradient(180deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.7) 25%,
+        rgba(0, 0, 0, 0.02) 100%),
+      var(--card-color);
+
+
   /* GDG PLM Colors */
   --gdg-yellow: #fbc00e;
   --gdg-red: #ea4235;
@@ -27,7 +34,7 @@
   --spacing-xl: 32px;
   --spacing-2xl: 48px;
   --spacing-3xl: 64px;
-  --spacing-4xl: 112px;
+  --spacing-4xl: 120px;
   
   /* Layout */
   --container-max-width: 1200px;
@@ -149,6 +156,7 @@ section {
 
 .section-header {
   text-align: center;
+  padding-bottom: 32px;
 }
 
 .section-header-light {
@@ -210,7 +218,7 @@ header nav {
 
 .nav-cta .register-button {
   background: var(--color-primary);
-  color: white;
+  color: var(--color-background);
   padding: var(--spacing-sm) var(--spacing-lg);
   border-radius: var(--border-radius);
   font-weight: 600;
@@ -218,10 +226,9 @@ header nav {
 }
 
 .nav-cta .register-button:hover {
-  background: #3367d6;
   text-decoration: none;
   transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(66, 133, 244, 0.3);
+  box-shadow: 0 4px 8px var(--color-primary);
 }
 
 /* ===================================
@@ -311,13 +318,14 @@ footer {
 
 .hero .tagline,
 .hero .theme {
-  color: var(--color-text-primary);
+  color: var(--color-text-secondary);
   font-size: 1.125rem;
   margin-bottom: var(--spacing-sm);
 }
 
 .event-details {
-  
+  padding: var(--spacing-4xl) var(--spacing-lg);
+  padding-top: var(--spacing-lg);
 }
 
 .details-grid {
@@ -435,11 +443,12 @@ footer {
   font-weight: 600;
   transition: var(--transition);
   box-shadow: 0 4px 12px rgba(66, 133, 244, 0.3);
+  background-color: var(--color-primary);
 }
 
 .cta-button:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 20px rgba(66, 133, 244, 0.4);
+  box-shadow: 0 8px 20px var(--color-primary);
   text-decoration: none;
 }
 
@@ -488,6 +497,148 @@ footer {
   margin-top: var(--spacing-md);
   color: var(--color-primary);
   font-weight: 600;
+}
+
+/* ===================================
+   About Page
+   =================================== */
+   
+.about-page {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  display: grid;
+  gap: var(--spacing-xl);
+  color: var(--color-text-primary);
+}
+
+/* Main description: two-column with decorative panel */
+.about-page .event-description {
+  display: grid;
+  grid-template-columns: 1fr 360px;
+  gap: var(--spacing-lg);
+  align-items: start;
+  background: var(--card-color);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+}
+
+/* Readable text column */
+.about-page .event-description p {
+  margin-top: var(--spacing-md);
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--color-text-secondary);
+  max-width: 70ch;
+}
+
+/* Topics list */
+.about-page .event-description ul {
+  margin-top: var(--spacing-md);
+  padding-left: var(--spacing-lg);
+  list-style: disc;
+}
+
+.about-page .event-description li {
+  margin-bottom: var(--spacing-sm);
+  color: var(--color-text-secondary);
+}
+
+/* Objectives shown as cards */
+.about-page .objectives {
+  padding: var(--spacing-lg);
+  background: var(--card-color);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+}
+
+.about-page .objectives h2 {
+  margin-bottom: var(--spacing-md);
+  color: var(--color-text-primary);
+}
+
+.about-page .objectives ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: var(--spacing-md);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.about-page .objectives li {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 2px dashed;
+  font-size: 0.98rem;
+}
+
+.gdg-yellow-border {
+  border-color: var(--gdg-yellow) !important;
+}
+
+.gdg-red-border {
+  border-color: var(--gdg-red) !important;
+}
+
+.gdg-blue-border {
+  border-color: var(--gdg-blue) !important;
+}
+
+.gdg-green-border {
+  border-color: var(--gdg-green) !important;
+}
+
+/* Partnership highlight */
+.about-page .partnership {
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+  background: var(--card-color);
+}
+
+.about-page .partnership h2 {
+  margin-bottom: var(--spacing-md);
+}
+
+.about-page .partnership ul {
+  margin-left: var(--spacing-lg);
+}
+
+/* About GDGoC card */
+.about-page .about-gdgoc {
+  background: var(--card-color);
+  padding: var(--spacing-lg);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--color-border);
+}
+
+.about-page .about-gdgoc h2 {
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-md);
+}
+
+/* Subtle spacing between sections */
+.about-page section+section {
+  margin-top: 0;
+}
+
+
+
+/* Responsive */
+@media (max-width: 900px) {
+  .about-page {
+    padding: var(--spacing-lg);
+  }
+
+  .about-page .event-description {
+    grid-template-columns: 1fr;
+  }
+
+  .about-page .objectives ul {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ===================================
@@ -722,6 +873,15 @@ footer {
   text-decoration: none;
 }
 
+.about-preview {
+  padding: var(--spacing-4xl) var(--spacing-lg);
+}
+
+.about-preview p {
+  font-size: 1.10rem;
+
+}
+
 /* ===================================
    Responsive Design
    =================================== */
@@ -767,5 +927,14 @@ footer {
   
   .not-found-page h1 {
     font-size: 3rem;
+  }
+
+  .about-preview {
+    padding: var(--spacing-4xl) var(--spacing-lg);
+  }
+
+  .about-preview p {
+    font-size: 1rem;
+    padding: 0;
   }
 }
