@@ -1,5 +1,6 @@
 'use client';
 
+import { REGISTRATION_LINK } from '@/constants/eventData';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
