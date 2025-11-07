@@ -558,17 +558,6 @@ footer {
   overflow: hidden;
 }
 
-footer::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: var(--gradient-sunrise);
-  box-shadow: 0 2px 8px rgba(0, 212, 255, 0.3);
-}
-
 footer::after {
   content: '';
   position: absolute;
