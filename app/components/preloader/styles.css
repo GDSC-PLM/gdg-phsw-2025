@@ -2,9 +2,33 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  background-color: #FFFCE1;
-  display: block;
+  background: linear-gradient(180deg, 
+    #F8E8E8 0%, 
+    #E8D5E8 25%, 
+    #7B4397 50%, 
+    #5A3A7A 75%, 
+    #3A2B70 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
   z-index: 99999999;
+}
+
+.loader-decorations {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.loader-stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .loader span {
@@ -22,10 +46,15 @@
 
 /*Preloader 1*/
 
+.loader {
+  position: relative;
+  z-index: 1;
+}
+
 .loader-style-1 {
-  width: 80px;
-  height: 80px;
-  line-height: 80px;
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
   text-align: center;
   font-size: 30px;
   -webkit-transform-style: preserve-3d;
@@ -34,74 +63,70 @@
   transition: transform 0.5s 0.1s;
   perspective: 9999px;
   color: #3e3e3e;
-  margin: -40px 0 0 -40px;
   margin: 0 auto;
-  position: absolute;
-  left: 50%;
-  margin-left: -37px;
-  top: 65px;
+  position: relative;
   opacity: 1;
 }
 
 .loader-style-1.panelLoad {
   z-index: 11;
-  top: 45%;
-  margin-top: -60px;
   -webkit-animation: panel 2.2s infinite forwards;
   animation: panel 2.2s infinite forwards;
 }
 
 .loader-style-1.panelLoad .cube-face {
-  box-shadow: inset 0 0 0 1px #4b4949, 0 0 1px 1px #4b4949;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.3), 0 0 8px rgba(58, 78, 215, 0.4);
 }
 
 .loader-style-1 .cube-face {
   width: inherit;
   height: inherit;
   position: absolute;
-  box-shadow: inset 0 0 0 1px #3e3e3e, 0 0 1px 1px #3e3e3e;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2), 0 0 6px rgba(58, 78, 215, 0.3);
   opacity: 1;
   font-family: Arial, Helvetica, sans-serif;
+  border-radius: 8px;
 }
 
 .loader-style-1 .cube-face-front {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: white;
-  transform: translate3d(0, 0, 40px);
-  -webkit-transform: translate3d(0, 0, 40px);
+  background: rgba(255, 255, 255, 0.95);
+  transform: translate3d(0, 0, 50px);
+  -webkit-transform: translate3d(0, 0, 50px);
   font-size: 30px;
+  backdrop-filter: blur(10px);
 }
 
 .loader-style-1 .cube-face-back {
-  background: #49baf4;
-  -webkit-transform: rotateY(180deg) translate3d(0, 0, 40px);
-  transform: rotateY(180deg) translate3d(0, 0, 40px);
+  background: linear-gradient(135deg, #00D4FF 0%, #8B5CF6 50%, #EC4899 100%);
+  -webkit-transform: rotateY(180deg) translate3d(0, 0, 50px);
+  transform: rotateY(180deg) translate3d(0, 0, 50px);
 }
 
 .loader-style-1 .cube-face-left {
-  background: #3cab5a;
-  -webkit-transform: rotateY(-90deg) translate3d(0, 0, 40px);
-  transform: rotateY(-90deg) translate3d(0, 0, 40px);
+  background: linear-gradient(135deg, #4A8AF5 0%, #3A4ED7 100%);
+  -webkit-transform: rotateY(-90deg) translate3d(0, 0, 50px);
+  transform: rotateY(-90deg) translate3d(0, 0, 50px);
 }
 
 .loader-style-1 .cube-face-right {
-  background: #fbbf0e;
-  -webkit-transform: rotateY(90deg) translate3d(0, 0, 40px);
-  transform: rotateY(90deg) translate3d(0, 0, 40px);
+  background: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+  -webkit-transform: rotateY(90deg) translate3d(0, 0, 50px);
+  transform: rotateY(90deg) translate3d(0, 0, 50px);
 }
 
 .loader-style-1 .cube-face-top {
-  background: #ede9e9;
-  -webkit-transform: rotateX(90deg) translate3d(0, 0, 40px);
-  transform: rotateX(90deg) translate3d(0, 0, 40px);
+  background: linear-gradient(135deg, #B6BFFF 0%, #4A8AF5 100%);
+  -webkit-transform: rotateX(90deg) translate3d(0, 0, 50px);
+  transform: rotateX(90deg) translate3d(0, 0, 50px);
 }
 
 .loader-style-1 .cube-face-bottom {
-  background: #ea4335;
-  -webkit-transform: rotateX(-90deg) translate3d(0, 0, 40px);
-  transform: rotateX(-90deg) translate3d(0, 0, 40px);
+  background: linear-gradient(135deg, #3A4ED7 0%, #312974 100%);
+  -webkit-transform: rotateX(-90deg) translate3d(0, 0, 50px);
+  transform: rotateX(-90deg) translate3d(0, 0, 50px);
 }
 
 @-webkit-keyframes panel {

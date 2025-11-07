@@ -1,10 +1,14 @@
 import Link from 'next/link';
+import { Stars } from '@/components';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
     <footer>
+      <div className="footer-decorations">
+        <Stars count={25} className="footer-stars" skipFirst={true} />
+      </div>
       <div className="footer-content">
         <div className="footer-section">
           <h3>SaaSified and Amplified 2025</h3>
@@ -41,7 +45,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <p>
-          &copy; {currentYear} GDGoC PLM. Developed by Daniel Hardy C. Camacho & Mariano Luiz B. King
+          &copy; {currentYear} GDGoC PLM
         </p>
       </div>
     </footer>
