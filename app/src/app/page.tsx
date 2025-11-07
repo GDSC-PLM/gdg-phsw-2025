@@ -1,20 +1,46 @@
 'use client'
 import Link from 'next/link';
-import { Countdown } from '@/components';
+import Image from 'next/image';
+import { Countdown, Stars, Airplane, Trail } from '@/components';
 import { EVENT_DETAILS, EVENT_DATE, REGISTRATION_LINK, ABOUT_EVENT } from '@/constants';
 
 export default function Home() {
-
   return (
     <div className="home-page">
       <div className="hero">
-        <h1>
-          <span className="gdg-red-text">SaaSified</span> and
-          <span className="gdg-blue-text"> Amplified</span>: Ascending{" "}
-          <span className="gdg-green-text">Software</span> to the Sky
-        </h1>
-        <p className="tagline">{EVENT_DETAILS.tagline}</p>
-        <p className="theme">{EVENT_DETAILS.theme}</p>
+        {/* Decorative Elements */}
+        <div className="hero-decorations">
+          <Stars count={20} className="hero-stars" />
+          <div className="hero-ph-map">
+            <Image
+              src="/assets/ph-map.png"
+              alt="Philippines Map - Start Local, Go Global"
+              width={500}
+              height={500}
+              className="ph-map-image"
+              priority
+            />
+          </div>
+          <div className="hero-trails">
+            <Trail variant="trail1" className="trail-1" />
+            <Trail variant="trail2" className="trail-2" />
+          </div>
+          <div className="hero-airplane">
+            <Airplane rotation={45} />
+          </div>
+        </div>
+
+        {/* Hero Content - Title partially obscured by airplane */}
+        <div className="hero-content">
+          <h1 className="hero-title">
+            <span className="title-line-1">SaaSified</span>
+            <span className="title-line-2">and</span>
+            <span className="title-line-3">Amplified:</span>
+            <span className="title-line-4">Ascending Software to the Sky</span>
+          </h1>
+          <p className="tagline">{EVENT_DETAILS.tagline}</p>
+          <p className="theme">{EVENT_DETAILS.theme}</p>
+        </div>
       </div>
 
       <section className="event-details">
@@ -39,6 +65,9 @@ export default function Home() {
       </section>
 
       <section className="countdown-section">
+        <div className="countdown-decorations">
+          <Stars count={15} className="countdown-stars" />
+        </div>
         <h1 className="section-header section-header-light">Event Countdown</h1>
         <Countdown targetDate={EVENT_DATE} />
       </section>
@@ -63,14 +92,31 @@ export default function Home() {
       </section>
 
       <section className="about-preview">
-        <h2 className="section-header">About the Event</h2>
-        <p>{ABOUT_EVENT.description.split("\n\n")[0]}</p>
-        <Link href="/about" className="read-more">
-          Learn More →
-        </Link>
+        <div className="about-preview-content">
+          <div className="about-preview-text">
+            <h2 className="section-header">About the Event</h2>
+            <p>{ABOUT_EVENT.description.split("\n\n")[0]}</p>
+            <Link href="/about" className="read-more">
+              Learn More →
+            </Link>
+          </div>
+          <div className="about-preview-visual">
+            <Image
+              src="/assets/ph-map.png"
+              alt="Scaling Filipino Innovation: Start Local, Go Global"
+              width={300}
+              height={300}
+              className="ph-map-preview"
+            />
+            <p className="theme-highlight">{EVENT_DETAILS.theme}</p>
+          </div>
+        </div>
       </section>
 
       <section className="quick-links">
+        <div className="quick-links-decorations">
+          <Stars count={20} className="quick-links-stars" />
+        </div>
         <h2 className="section-header">Quick Links</h2>
         <div className="links-grid">
           <Link href="/speakers" className="quick-link-card">

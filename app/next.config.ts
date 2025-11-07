@@ -2,9 +2,13 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   reactCompiler: true,
-  output: 'export', // Enable static HTML export
+  output: 'export',
   images: {
-    unoptimized: true, // Required for static export
+    unoptimized: true,
+  },
+  swcMinify: true,
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
   },
 };
 
