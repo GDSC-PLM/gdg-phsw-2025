@@ -43,7 +43,7 @@ export default function Header() {
         </ul>
         <div className="nav-cta">
           <a 
-            href={REGISTRATION_LINK.url}
+            href="https://bit.ly/phsw25-SaasifiedandAmplified" 
             target="_blank" 
             rel="noopener noreferrer"
             className="register-button"
