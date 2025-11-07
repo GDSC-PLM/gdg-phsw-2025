@@ -1,7 +1,5 @@
 'use client';
 
-import React from 'react';
-
 interface TrailProps {
   variant?: 'trail1' | 'trail2';
   className?: string;

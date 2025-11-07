@@ -82,14 +82,6 @@ export const REGISTRATION_LINK: ExternalLink = {
 
 ---
 
-## Deploy to Vercel
-
-1. Connect your GitHub repository to [Vercel](https://vercel.com)
-2. Set root directory to `/app`
-3. Deploy automatically on push to `main`
-
----
-
 ## Developed By
 
 **Daniel Hardy C. Camacho** — Web Development Lead, GDGoC PLM 2025  

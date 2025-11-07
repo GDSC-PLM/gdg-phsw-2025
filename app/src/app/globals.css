@@ -2107,7 +2107,7 @@ border-left: 4px solid var(--gdg-green);
   }
   
   .phsw-ph {
-    font-size: 1.25rem;
+    font-size: 1.125rem;
   }
   
   .phsw-text {
@@ -2115,33 +2115,17 @@ border-left: 4px solid var(--gdg-green);
   }
   
   .nav-logo-image {
-    width: 100px;
-    height: 28px;
-  }
-  
-  .phsw-ph {
-    font-size: 1.25rem;
-  }
-  
-  .phsw-text {
-    font-size: 0.55rem;
+    height: 32px;
+    width: auto;
   }
   
   .nav-links a {
-    font-size: 0.75rem;
-    padding: var(--spacing-xs) var(--spacing-xs);
+    font-size: 1rem;
+    padding: var(--spacing-md);
   }
   
   .collaboration-text {
-    font-size: 0.5rem;
-  }
-  
-  .phsw-ph {
-    font-size: 0.875rem;
-  }
-  
-  .phsw-text {
-    font-size: 0.4rem;
+    display: none;
   }
   
   .nav-cta .register-button {

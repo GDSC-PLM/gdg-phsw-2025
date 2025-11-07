@@ -5,7 +5,6 @@ import { Countdown, Stars, Airplane, Trail } from '@/components';
 import { EVENT_DETAILS, EVENT_DATE, REGISTRATION_LINK, ABOUT_EVENT } from '@/constants';
 
 export default function Home() {
-
   return (
     <div className="home-page">
       <div className="hero">
@@ -30,7 +29,7 @@ export default function Home() {
             <Airplane rotation={45} />
           </div>
         </div>
-        
+
         {/* Hero Content - Title partially obscured by airplane */}
         <div className="hero-content">
           <h1 className="hero-title">

@@ -1,8 +1,5 @@
 'use client';
 
-import React from 'react';
-
-
 // Predefined star positions for consistent layout
 const STAR_POSITIONS = [
   { left: '10%', top: '15%' },
