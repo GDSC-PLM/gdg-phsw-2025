@@ -17,7 +17,6 @@ This is a static event website built with Next.js and TypeScript, showcasing our
 
 - **Framework:** Next.js
 - **Language:** TypeScript
-- **Deployment:** Vercel
 
 ## Development
 
@@ -33,9 +32,6 @@ npm run dev
 
 # Build for production
 npm run build
-
-# Export static site
-npm run build && npm run export
 ```
 
 Development server will be available at `http://localhost:3000`

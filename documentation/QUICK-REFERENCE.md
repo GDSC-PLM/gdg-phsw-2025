@@ -1,6 +1,6 @@
 # Quick Reference Card
 
-## 🚀 Start Development
+## Start Development
 
 ```bash
 cd app
@@ -10,7 +10,7 @@ npm run dev
 
 ---
 
-## 📁 Key Directories
+## Key Directories
 
 | Path | Purpose |
 |------|---------|
@@ -22,7 +22,7 @@ npm run dev
 
 ---
 
-## 🔧 Common Tasks
+## Common Tasks
 
 ### Update Registration Link
 ```typescript
@@ -57,20 +57,20 @@ export const REGISTRATION_LINK: ExternalLink = {
 
 ---
 
-## 📄 Pages & Routes
+## Pages & Routes
 
 | Route | File | Status |
 |-------|------|--------|
-| `/` | `src/app/page.tsx` | ✅ |
-| `/about` | `src/app/about/page.tsx` | ✅ |
-| `/speakers` | `src/app/speakers/page.tsx` | ✅ |
-| `/schedule` | `src/app/schedule/page.tsx` | ✅ |
-| `/faq` | `src/app/faq/page.tsx` | ✅ |
-| `/partners` | `src/app/partners/page.tsx` | ✅ |
+| `/` | `src/app/page.tsx` | Complete |
+| `/about` | `src/app/about/page.tsx` | Complete |
+| `/speakers` | `src/app/speakers/page.tsx` | Complete |
+| `/schedule` | `src/app/schedule/page.tsx` | Complete |
+| `/faq` | `src/app/faq/page.tsx` | Complete |
+| `/partners` | `src/app/partners/page.tsx` | Complete |
 
 ---
 
-## 🎨 Components
+## Components
 
 ```typescript
 import { Header, Footer, Countdown } from '@/components';
@@ -82,7 +82,7 @@ import { Header, Footer, Countdown } from '@/components';
 
 ---
 
-## 📊 Data Constants
+## Data Constants
 
 ```typescript
 import { 
@@ -97,7 +97,7 @@ import {
 
 ---
 
-## 🔍 TypeScript Types
+## TypeScript Types
 
 ```typescript
 import type { 
@@ -111,7 +111,7 @@ import type {
 
 ---
 
-## 🛠️ Build & Deploy
+## Build
 
 ### Local Build
 ```bash
@@ -119,26 +119,19 @@ cd app
 npm run build
 ```
 
-### Deploy to Vercel
-1. Connect GitHub repo
-2. Set root directory: `app`
-3. Push to main branch
-4. Auto-deploys ✨
-
 ---
 
-## 📝 Documentation
+## Documentation
 
 | Document | Purpose |
 |----------|---------|
 | `SRS-Document.md` | Full requirements |
 | `PROJECT-STRUCTURE.md` | Folder organization |
 | `DEVELOPMENT-GUIDE.md` | How to develop |
-| `COMPLETION-SUMMARY.md` | Phase 1 status |
 
 ---
 
-## ⚡ Quick Commands
+## Quick Commands
 
 ```bash
 # Development
@@ -155,7 +148,7 @@ git push              # Push to remote
 
 ---
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 **Port in use?**
 ```bash
@@ -176,17 +169,17 @@ npm run build
 
 ---
 
-## 📞 Event Details
+## Event Details
 
 **Date:** November 13, 2025  
 **Time:** 12:00 PM – 4:00 PM  
 **Venue:** Bukod Tanging Bulwagan, PLM
 
-**Countdown:** Live on homepage ⏰
+**Countdown:** Live on homepage
 
 ---
 
-## ✅ Phase 1 Complete
+## Phase 1 Complete
 
 - [x] 6 pages working
 - [x] 3 components built
@@ -198,8 +191,6 @@ npm run build
 - [x] Ready for Phase 2
 
 ---
-
-**Next:** Add registration link → Deploy to Vercel → Phase 2 Styling
 
 **Deadline:** November 10, 2025  
 **Event:** November 13, 2025

@@ -1,0 +1,37 @@
+1st Speaker
+Topic Details - “The SaaS Blueprint: Building in the Clouds”
+
+This session dives into the anatomy of Software as a Service — exploring how SaaS applications are built, hosted, and delivered via the cloud. Attendees will learn about key concepts like multi-tenancy, deployment models, and the role of APIs and microservices in building scalable software. The talk will unpack how SaaS simplifies complexity for users while powering innovation behind the scenes.
+
+
+Jazmine Claire Calma
+AWS, GCP & ISTQB Certified • Women Techmakers Ambassador • Google Developer Groups Cloud Manila Lead
+Jazmine Claire Calma is a Computer Engineering graduate from Asia Pacific College and a certified professional in AWS, Google Cloud, and ISTQB. With nearly five years of experience in the tech industry, she currently serves as a Senior Quality Assurance Engineer at Kollab, where she designs and executes test strategies, develops automation scripts, and builds CI/CD pipelines on Google Cloud Platform.
+Beyond her technical expertise, Jazmine is a passionate advocate for women empowerment, technology education, and community building. She proudly leads as a Women Techmakers Ambassador and GDG Cloud Manila Lead, inspiring developers and students to explore opportunities in cloud technologies. She also mentors under the Unilab Foundation’s STEM+ PH program, where she guides young learners in their tech journeys.
+Trained under Google’s Women Developer Academy, Jazmine continues to use her platform to champion diversity in tech, volunteer for causes close to her heart, and empower others to grow in the ever-evolving digital landscape.
+
+2nd Speaker
+Topic Details - “Scaling Heights: The Art of Seamless Growth”
+
+In this talk, students will explore how modern SaaS platforms achieve flexibility and performance at scale. The speaker will discuss elastic cloud infrastructure, load balancing, containerization (e.g., Docker, Kubernetes), and CI/CD pipelines — showing how small ideas can grow to serve thousands. Attendees will also gain insight into real-world cloud scaling challenges and how engineers solve them efficiently.
+
+Sermil Matoto
+Google Developer Expert – Cloud | Chief Engineer at Kollab
+Sermil Matoto is a Google Developer Expert (GDE) in Cloud Technologies and a seasoned Chief Engineer at Kollab, bringing over a decade of experience in designing and implementing secure, scalable, and modern cloud architectures. A proud Computer Engineering graduate from the Polytechnic University of the Philippines, he has built a career specializing in serverless application development, DevOps, and multi-cloud environments across Google Cloud, AWS, Azure, and Okta.
+As a technical leader, Sermil has spearheaded cloud transformation initiatives that empower businesses to innovate efficiently and securely. His passion lies in bridging innovation and impact—leveraging technology to solve complex challenges and mentor the next generation of cloud professionals.
+Recognized for his deep expertise and community engagement, Sermil continues to contribute to the tech ecosystem through Google Developer Groups, industry events, and mentorship programs, helping others navigate the ever-evolving world of cloud computing.
+
+
+3rd Speaker
+Topic Details - “Innovation on Demand: SaaS and the Startup Mindset”
+
+How can a single idea turn into a global SaaS product? This talk explores the entrepreneurial side of the SaaS revolution. The speaker will share their journey of founding or scaling a SaaS-based startup — including lessons on go-to-market strategies, customer retention, and leveraging cloud tools to build lean yet powerful digital products. This session aims to inspire students to innovate, collaborate, and launch ideas that ascend beyond boundaries.
+
+Shan Sebastian
+CEO of SmartChat AI PH | Co-founder of PH Business Network | SaaS & AI Content Strategist
+Shan Sebastian is the CEO of SmartChat AI PH and Co-founder of the PH Business Network, a thriving community of over 130,000 members. A dynamic leader in the digital space, Shan helps AI and SaaS startups establish market leadership through high-converting content funnels and data-driven marketing strategies.
+As a Digital Marketing Specialist and Copywriter, Shan has worked with a diverse portfolio of brands, from Web3 projects to fast-growing tech startups, empowering them to craft content that connects, converts, and scales. His expertise spans content marketing, strategic social media, B2B lead generation, and digital entrepreneurship, with a unique focus on transforming innovative ideas into strong, visible brands.
+Beyond business, Shan is also a volunteer educator, teaching Communication at Mater Redemptoris College of San Jose, and a recognized community leader who advocates for ethical marketing and purpose-driven storytelling. Through his work, he continues to bridge the gap between technology, creativity, and human connection—helping founders turn their vision into impact.
+
+
+

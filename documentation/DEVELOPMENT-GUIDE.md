@@ -323,40 +323,6 @@ git push origin feature/add-gallery-page
 # Merge after review
 ```
 
-## Deployment
-
-### Vercel Deployment (Recommended)
-
-1. **Connect Repository:**
-   - Go to vercel.com
-   - Import GitHub repository
-   - Select `gdg-phsw-2025` repo
-
-2. **Configure Project:**
-   - Framework Preset: Next.js
-   - Root Directory: `app`
-   - Build Command: `npm run build` (default)
-   - Output Directory: `out` (auto-detected)
-
-3. **Deploy:**
-   - Push to `main` branch
-   - Vercel auto-deploys
-   - Preview URL provided
-
-4. **Custom Domain (Optional):**
-   - Add domain in Vercel dashboard
-   - Update DNS records
-
-### Manual Deployment
-
-For other platforms:
-
-```bash
-cd app
-npm run build
-# Deploy /out directory to static hosting
-```
-
 ## Performance Optimization
 
 ### Current Implementation
@@ -409,7 +375,6 @@ npm run build
 - **Next.js Docs:** https://nextjs.org/docs
 - **TypeScript Docs:** https://www.typescriptlang.org/docs
 - **React Docs:** https://react.dev
-- **Vercel Docs:** https://vercel.com/docs
 
 ## Getting Help
 
@@ -420,6 +385,6 @@ npm run build
 
 ---
 
-**Happy Coding! 🚀**
+**Happy Coding!**
 
 *Developed by Daniel Hardy C. Camacho & Mariano Luiz B. King*

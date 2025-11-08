@@ -79,7 +79,6 @@ The website will serve as the primary digital platform for the event scheduled f
 - FAQ and Partners/Sponsors sections
 - SEO optimization and social media integration
 - Responsive design structure (barebones, no styling libraries)
-- Deployment on Vercel
 - Post-event archival and future reference capability
 
 **Out of Scope (Current Phase):**
@@ -187,8 +186,7 @@ The website will include the following core features:
 - **Network:** Standard internet connectivity (3G, 4G, 5G, WiFi)
 
 **Server-Side Environment:**
-- **Hosting:** Vercel platform
-- **Deployment:** Global CDN for fast content delivery
+- **Hosting:** Static hosting platform
 - **Build:** Next.js static export with SSG
 
 ### 2.5 Design and Implementation Constraints
@@ -202,8 +200,7 @@ The website will include the following core features:
    - All content must be hardcoded in components
    - No CMS or external content sources
 
-3. **Deployment:**
-   - Must deploy to Vercel platform
+3. **Build Configuration:**
    - Must support static site generation
 
 4. **Timeline:**
@@ -221,17 +218,15 @@ The website will include the following core features:
 
 **Assumptions:**
 1. All event content (text, dates, speaker bios) is finalized
-2. Google Forms registration link will be provided before deployment
+2. Google Forms registration link will be provided before launch
 3. Partner/sponsor information will be available before launch
-4. Domain name or Vercel subdomain will be configured
-5. Target users have modern browsers with JavaScript enabled
+4. Target users have modern browsers with JavaScript enabled
 
 **Dependencies:**
-1. Vercel platform availability and reliability
-2. Next.js framework stability (using latest stable version)
-3. TypeScript toolchain and compiler
-4. External Google Forms service for registration
-5. Internet connectivity for users accessing the site
+1. Next.js framework stability (using latest stable version)
+2. TypeScript toolchain and compiler
+3. External Google Forms service for registration
+4. Internet connectivity for users accessing the site
 
 ---
 
@@ -645,7 +640,6 @@ interface ExternalLink {
 
 **NFR-SEC-01:** HTTPS
 - Website must be served exclusively over HTTPS
-- Vercel provides SSL certificates by default
 
 **NFR-SEC-02:** External Links
 - All external links must use `rel="noopener noreferrer"` to prevent reverse tabnabbing
@@ -673,7 +667,7 @@ interface ExternalLink {
 
 **NFR-MAINT-03:** Documentation
 - All components must include JSDoc comments
-- README.md must document setup, development, and deployment procedures
+- README.md must document setup and development procedures
 
 **NFR-MAINT-04:** Type Safety
 - All props, state, and functions must have explicit TypeScript types
@@ -716,7 +710,7 @@ interface ExternalLink {
 - No server-side rendering required for current scope
 
 **NFR-SCALE-02:** CDN Distribution
-- Vercel must distribute static assets via global CDN
+- Static assets must be distributed via global CDN
 - Content must be cached for optimal delivery
 
 **NFR-SCALE-03:** Extensibility
@@ -730,7 +724,6 @@ interface ExternalLink {
 
 **NFR-REL-01:** Uptime
 - Website must maintain 99.9% uptime during critical period (November 1-13, 2025)
-- Vercel SLA provides high availability
 
 **NFR-REL-02:** Error Recovery
 - If countdown timer fails, must degrade gracefully without breaking page
@@ -822,12 +815,11 @@ interface ExternalLink {
 
 **Primary Framework:** Next.js (latest stable version as of November 2025)
 - **Reasoning:**
-  - Built on React for component-based architecture
-  - Excellent static site generation capabilities
-  - Built-in routing system
-  - Optimized build and performance
-  - First-class TypeScript support
-  - Seamless Vercel deployment integration
+- Built on React for component-based architecture
+- Excellent static site generation capabilities
+- Built-in routing system
+- Optimized build and performance
+- First-class TypeScript support
 
 **Build Configuration:**
 - Static Site Generation (SSG) using `next export` or App Router with static exports
@@ -849,20 +841,12 @@ interface ExternalLink {
 - Self-documenting code through types
 - Easier refactoring and maintenance
 
-### 5.3 Deployment Platform
+### 5.3 Build Configuration
 
-**Hosting:** Vercel
-- **Features Used:**
-  - Automatic deployments from Git
-  - Global CDN distribution
-  - SSL/HTTPS by default
-  - Environment variable management
-  - Preview deployments for pull requests
-  - Analytics and performance monitoring
-
-**Domain:**
-- Vercel-provided subdomain (e.g., `gdgoc-plm-event.vercel.app`)
-- Or custom domain if configured
+**Static Site Generation:**
+- All pages pre-rendered at build time
+- Optimized for fast load times
+- No server-side rendering required
 
 ### 5.4 Version Control
 
@@ -932,10 +916,8 @@ interface ExternalLink {
 - SEO optimization and meta tags
 - Check TypeScript compilation
 
-**Day 8 (Nov 9):** Deployment and Documentation
-- Deploy to Vercel
+**Day 8 (Nov 9):** Testing and Documentation
 - Test production build
-- Configure domain (if applicable)
 - Finalize documentation
 - Buffer day for any issues
 
@@ -978,7 +960,7 @@ The following features are out of scope for Phase 1 but may be considered for fu
 - Blog or news section for GDGoC PLM updates
 
 ### Technical Enhancements
-- Analytics integration (Google Analytics, Vercel Analytics)
+- Analytics integration
 - Progressive Web App (PWA) capabilities
 - Internationalization (Tagalog/Filipino language support)
 - Dark mode toggle
@@ -1029,9 +1011,9 @@ The following features are out of scope for Phase 1 but may be considered for fu
 **Theme:** SaaSified and Amplified: Ascending Software to the Sky
 
 **Color Palette:**
-- ☁️ Sky White – clarity and openness
-- 🌤 Cloud Blue – innovation and technology
-- 💫 Sunrise Gradient (Cyan–Violet–Pink) – progress and creativity
+- Sky White – clarity and openness
+- Cloud Blue – innovation and technology
+- Sunrise Gradient (Cyan–Violet–Pink) – progress and creativity
 
 **Design Motif:**
 - Digital skyline or ascending cloud ladder

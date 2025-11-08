@@ -1,5 +1,5 @@
 # Raw event information (private)
-docs/
+
 
 # Dependencies
 node_modules/
@@ -46,3 +46,6 @@ next-env.d.ts
 # Gemini CLI
 GEMINI.md
 gemini-input
+
+# Inspo
+inspo/

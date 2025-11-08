@@ -205,7 +205,7 @@ Next.js App Router file-system based routing:
 3. Export from `components/index.ts`
 4. Import using `@/components` alias
 
-## Build & Deployment
+## Build
 
 ### Development
 ```bash
@@ -225,12 +225,6 @@ cd app
 npm run build
 # Output in /out directory
 ```
-
-### Vercel Deployment
-- Connect GitHub repository to Vercel
-- Set root directory to `/app`
-- Vercel auto-detects Next.js configuration
-- Automatic deployments on push to main
 
 ## Best Practices
 
@@ -258,4 +252,4 @@ npm run build
 
 ---
 
-*This structure follows Next.js 14+ App Router conventions and is optimized for static site generation and deployment on Vercel.*
+*This structure follows Next.js 14+ App Router conventions and is optimized for static site generation.*
