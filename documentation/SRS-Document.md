@@ -1,4 +1,4 @@
-# Software Requirements Specification (SRS)
+git add .# Software Requirements Specification (SRS)
 ## GDGoC PLM Event Website: SaaSified and Amplified 2025
 
 **Document Version:** 1.0  
@@ -82,7 +82,7 @@ The website will serve as the primary digital platform for the event scheduled f
 - Post-event archival and future reference capability
 
 **Out of Scope (Current Phase):**
-- Visual design and styling (deferred to Phase 2)
+- Visual design and styling
 - CSS frameworks or component libraries
 - Backend services or database integration
 - User authentication or admin panels
@@ -194,7 +194,7 @@ The website will include the following core features:
 1. **Technology Stack:**
    - Must use Next.js (React framework)
    - Must use TypeScript (type-safe development)
-   - No CSS frameworks or styling libraries in Phase 1
+   - No CSS frameworks or styling libraries
 
 2. **Content Management:**
    - All content must be hardcoded in components
@@ -207,7 +207,7 @@ The website will include the following core features:
    - Website must be completed by November 10, 2025 (deadline in 8 days)
 
 5. **Future Compatibility:**
-   - Structure must accommodate future styling (Phase 2)
+   - Structure must accommodate future styling
    - Code must be maintainable and well-documented
 
 6. **Performance:**
@@ -370,7 +370,7 @@ interface Speaker {
   topic: string;
   topicDescription: string;
   biography: string;
-  imageUrl?: string; // Optional for Phase 1
+  imageUrl?: string; // Optional
 }
 ```
 **TR-SP-03:** Store speaker data as hardcoded array/object
@@ -890,7 +890,7 @@ interface ExternalLink {
 **Project Deadline:** November 10, 2025 (8 days)  
 **Event Date:** November 13, 2025
 
-### Phase 1: Structure and Functionality (Current Phase)
+### Timeline: Structure and Functionality
 
 **Day 1-2 (Nov 2-3):** Project Setup and Core Pages
 - Initialize Next.js + TypeScript project
@@ -927,13 +927,7 @@ interface ExternalLink {
 - Official launch
 - Share with intended audience
 
-### Phase 2: Styling and Design (Post-Structure)
-- To be scheduled after November 10
-- Will include CSS/styling framework integration
-- Visual design implementation
-- Animations and interactions
-
-### Phase 3: Post-Event (After November 13)
+### Post-Event (After November 13)
 - Update website with "Event Concluded" messaging
 - Optional: Add photo gallery or event recap
 - Maintain as archive/reference
@@ -942,9 +936,9 @@ interface ExternalLink {
 
 ## 7. Future Enhancements
 
-The following features are out of scope for Phase 1 but may be considered for future iterations:
+The following features are out of scope but may be considered for future iterations:
 
-### Design and Styling (Phase 2)
+### Design and Styling
 - CSS framework integration (Tailwind CSS, CSS Modules, etc.)
 - Visual design implementation matching theme colors
 - Animations and transitions
@@ -1011,25 +1005,19 @@ The following features are out of scope for Phase 1 but may be considered for fu
 **Theme:** SaaSified and Amplified: Ascending Software to the Sky
 
 **Color Palette:**
-- Sky White – clarity and openness
-- Cloud Blue – innovation and technology
+- Sky White (`#FFFFFF`) – clarity and openness
+- Cloud Blue (`#4A8AF5`) – innovation and technology
+  - Light Cloud Blue (`#B6BFFF`)
+  - Dark Cloud Blue (`#3A4ED7`)
 - Sunrise Gradient (Cyan–Violet–Pink) – progress and creativity
+  - Sunrise Cyan (`#00D4FF`)
+  - Sunrise Violet (`#8B5CF6`)
+  - Sunrise Pink (`#EC4899`)
 
 **Design Motif:**
 - Digital skyline or ascending cloud ladder
 - Represents scalable innovation from local to global
 
-*(Visual design implementation deferred to Phase 2)*
-
----
-
-## Document Approval
-
-| Role | Name | Signature | Date |
-|------|------|-----------|------|
-| Project Owner | [Name] | | |
-| Lead Developer | [Name] | | |
-| GDGoC PLM Representative | [Name] | | |
 
 ---
 
