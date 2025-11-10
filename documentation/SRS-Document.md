@@ -247,8 +247,8 @@ The homepage serves as the main entry point, providing an overview of the event 
 **FR-HP-02:** Event key details section
 - Date: November 13, 2025 (Thursday)
 - Time: 12:00 PM – 4:00 PM
-- Venue: Bukod Tanging Bulwagan, Pamantasan ng Lungsod ng Maynila (PLM), Intramuros, Manila
-- Format: Onsite Keynote Talk
+- Venue: Online
+- Format: Online Keynote Talk
 - Audience: 100–150 PLM students
 
 **FR-HP-03:** Countdown timer component
@@ -388,7 +388,7 @@ Displays a high-level timeline of the event from 12:00 PM to 4:00 PM.
 
 **FR-SC-01:** Event timeline overview
 - Must display: November 13, 2025 (Thursday), 12:00 PM – 4:00 PM
-- Venue: Bukod Tanging Bulwagan, PLM
+- Venue: Online
 
 **FR-SC-02:** Basic agenda structure
 - Must include general flow (e.g., Registration, Opening Remarks, Keynote Sessions, Closing)
@@ -974,7 +974,8 @@ The following features are out of scope but may be considered for future iterati
 **Event Name:** SaaSified and Amplified: Ascending Software to the Sky  
 **Date:** November 13, 2025 (Thursday)  
 **Time:** 12:00 PM – 4:00 PM  
-**Venue:** Bukod Tanging Bulwagan, Pamantasan ng Lungsod ng Maynila, Intramuros, Manila  
+**Venue:** Online  
+**Format:** Online Keynote Talk  
 **Organizer:** GDGoC PLM  
 **Expected Attendees:** 100-150 PLM students  
 

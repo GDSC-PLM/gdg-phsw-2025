@@ -173,7 +173,7 @@ npm run build
 
 **Date:** November 13, 2025  
 **Time:** 12:00 PM – 4:00 PM  
-**Venue:** Bukod Tanging Bulwagan, PLM
+**Venue:** Online
 
 **Countdown:** Live on homepage
 

@@ -23,7 +23,7 @@ export const FAQ_ITEMS: FAQItem[] = [
   {
     id: 'faq-4',
     question: 'Where is the venue?',
-    answer: 'The event will be held at DLSU Animo Labs TBI and Fab Lab, Taft Avenue, Manila 1004.',
+    answer: 'The event will be held online.',
   },
   {
     id: 'faq-5',
