@@ -125,6 +125,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -134,6 +135,7 @@ body {
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 /* ===================================
@@ -546,16 +548,19 @@ header nav {
    =================================== */
 footer {
   background: linear-gradient(180deg, 
-    #F8E8E8 0%, 
-    #E8D5E8 25%, 
-    #7B4397 50%, 
-    #5A3A7A 75%, 
-    #3A2B70 100%);
+    rgba(248, 249, 250, 0.3) 0%,
+    #9370DB 8%, 
+    #8B5CF6 30%, 
+    #6A5ACD 55%, 
+    #4A8AF5 78%, 
+    #3A4ED7 100%);
   color: var(--color-background);
-  padding: var(--spacing-2xl) var(--spacing-lg) var(--spacing-xl);
+  padding: var(--spacing-2xl) 0 var(--spacing-xl);
   margin-top: var(--spacing-4xl);
   position: relative;
   overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 footer::after {
@@ -598,6 +603,7 @@ footer::after {
 .footer-content {
   max-width: var(--container-max-width);
   margin: 0 auto;
+  padding: 0 var(--spacing-lg);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: var(--spacing-lg);
@@ -682,7 +688,7 @@ footer::after {
 .footer-bottom {
   max-width: var(--container-max-width);
   margin: 0 auto;
-  padding-top: var(--spacing-md);
+  padding: var(--spacing-md) var(--spacing-lg) 0;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   text-align: center;
   position: relative;
@@ -1017,20 +1023,18 @@ footer::after {
 .countdown-section {
   text-align: center;
   background: linear-gradient(180deg, 
-    #F8E8E8 0%, 
-    #E8D5E8 25%, 
-    #7B4397 50%, 
-    #5A3A7A 75%, 
-    #3A2B70 100%);
+    #9370DB 0%, 
+    #8B5CF6 25%, 
+    #6A5ACD 50%, 
+    #4A8AF5 75%, 
+    #3A4ED7 100%);
   position: relative;
   overflow: hidden;
   padding: var(--spacing-4xl) var(--spacing-lg);
   max-width: none !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  width: 100%;
 }
 
 .countdown-decorations {
@@ -1261,20 +1265,18 @@ footer::after {
    =================================== */
 .quick-links {
   background: linear-gradient(180deg, 
-    #F8E8E8 0%, 
-    #E8D5E8 25%, 
-    #7B4397 50%, 
-    #5A3A7A 75%, 
-    #3A2B70 100%);
+    #9370DB 0%, 
+    #8B5CF6 25%, 
+    #6A5ACD 50%, 
+    #4A8AF5 75%, 
+    #3A4ED7 100%);
   position: relative;
   overflow: hidden;
   padding: var(--spacing-4xl) var(--spacing-lg);
   max-width: none !important;
   margin-left: 0 !important;
   margin-right: 0 !important;
-  width: 100vw;
-  margin-left: calc(50% - 50vw);
-  margin-right: calc(50% - 50vw);
+  width: 100%;
 }
 
 .quick-links::before {
