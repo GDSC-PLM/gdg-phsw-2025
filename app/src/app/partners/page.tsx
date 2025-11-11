@@ -9,20 +9,12 @@ export const metadata: Metadata = {
 };
 
 // Helper function to get tier display name
-const getTierDisplayName = (tier?: string): string => {
+const getTierDisplayName = (tier: string): string => {
   switch (tier) {
-    case 'title':
-      return 'Title Partner';
-    case 'platinum':
-      return 'Platinum Sponsors (Presented By)';
-    case 'silver':
-      return 'Silver Sponsor (In Partnership with)';
     case 'major':
       return 'Major Partners';
     case 'minor':
       return 'Minor Partners';
-    case 'media':
-      return 'Media Partners';
     default:
       return 'Partners';
   }
@@ -33,21 +25,21 @@ const groupPartnersByTier = () => {
   const grouped: Record<string, typeof PARTNERS> = {};
   
   PARTNERS.forEach((partner) => {
-    const tier = partner.tier || 'supporting';
+    const tier = partner.tier;
     if (!grouped[tier]) {
       grouped[tier] = [];
     }
     grouped[tier].push(partner);
   });
 
-  // Define tier order
-  const tierOrder: (string | undefined)[] = ['title', 'platinum', 'silver', 'major', 'minor', 'media', 'supporting'];
+  // Define tier order - major first, then minor
+  const tierOrder: string[] = ['major', 'minor'];
   
   return tierOrder
-    .filter(tier => grouped[tier || ''])
+    .filter(tier => grouped[tier])
     .map(tier => ({
-      tier: tier || 'supporting',
-      partners: grouped[tier || ''],
+      tier,
+      partners: grouped[tier],
     }));
 };
 
@@ -67,31 +59,16 @@ export default function PartnersPage() {
           <div className="partners-list">
             {partners.map((partner) => (
               <article key={partner.id} className="partner-card">
-                {partner.logoUrl ? (
-                  <div className="partner-logo">
-                    <Image
-                      src={partner.logoUrl}
-                      alt={partner.name}
-                      width={300}
-                      height={200}
-                      style={{ objectFit: 'contain', background: 'transparent' }}
-                    />
-                    <div className="partner-name-overlay">{partner.name}</div>
-                  </div>
-                ) : (
-                  <h3>{partner.name}</h3>
-                )}
-                {partner.description && <p className="partner-description">{partner.description}</p>}
-                {partner.websiteUrl && (
-                  <a
-                    href={partner.websiteUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="partner-link"
-                  >
-                    Visit Website →
-                  </a>
-                )}
+                <div className="partner-logo">
+                  <Image
+                    src={partner.logoUrl}
+                    alt={partner.name}
+                    width={300}
+                    height={200}
+                    style={{ objectFit: 'contain', background: 'transparent' }}
+                  />
+                  <div className="partner-name-overlay">{partner.name}</div>
+                </div>
               </article>
             ))}
           </div>

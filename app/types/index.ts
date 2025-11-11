@@ -21,10 +21,8 @@ export interface FAQItem {
 export interface Partner {
   id: string;
   name: string;
-  logoUrl?: string;
-  description?: string;
-  websiteUrl?: string;
-  tier?: 'title' | 'platinum' | 'major' | 'minor' | 'silver' | 'media' | 'supporting';
+  logoUrl: string;
+  tier: 'major' | 'minor';
 }
 
 export interface ScheduleItem {
